@@ -54,16 +54,16 @@ interface DataProviderProps {
 const mockApi = {
   fetchOrders: (): Promise<Order[]> => {
     return Promise.resolve([
-      { id: '1', date: '2025-01-01', amount: 120, description: 'Product A', createdAt: '2025-01-01T12:00:00Z' },
-      { id: '2', date: '2025-01-02', amount: 95, description: 'Product B', createdAt: '2025-01-02T14:30:00Z' },
-      { id: '3', date: '2025-01-03', amount: 200, description: 'Product C', createdAt: '2025-01-03T09:15:00Z' }
+      { id: '1', date: '2025-05-11', amount: 120, description: 'Product A', createdAt: '2025-01-01T12:00:00Z' },
+      { id: '2', date: '2025-05-12', amount: 95, description: 'Product B', createdAt: '2025-01-02T14:30:00Z' },
+      { id: '3', date: '2025-05-13', amount: 200, description: 'Product C', createdAt: '2025-01-03T09:15:00Z' }
     ]);
   },
   fetchPayments: (): Promise<Payment[]> => {
     return Promise.resolve([
-      { id: '1', date: '2025-01-01', amount: 50, description: 'Payment A', createdAt: '2025-01-01T13:00:00Z' },
-      { id: '2', date: '2025-01-02', amount: 120, description: 'Payment B', createdAt: '2025-01-02T15:30:00Z' },
-      { id: '3', date: '2025-01-04', amount: 75, description: 'Payment C', createdAt: '2025-01-04T10:45:00Z' }
+      { id: '1', date: '2025-05-11', amount: 50, description: 'Payment A', createdAt: '2025-01-01T13:00:00Z' },
+      { id: '2', date: '2025-05-12', amount: 120, description: 'Payment B', createdAt: '2025-01-02T15:30:00Z' },
+      { id: '3', date: '2025-05-14', amount: 75, description: 'Payment C', createdAt: '2025-01-04T10:45:00Z' }
     ]);
   },
   addOrder: (order: Omit<Order, 'id' | 'createdAt'>): Promise<Order> => {
