@@ -5,7 +5,7 @@ import FinancialSummary from '../components/FinancialSummary';
 import TransactionList from '../components/TransactionList';
 import OrderForm from '../components/OrderForm';
 import PaymentForm from '../components/PaymentForm';
-import { ChevronLeft, ChevronRight, Calendar, ShoppingCart, DollarSign } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, ShoppingCart, IndianRupee } from 'lucide-react';
 
 const DayView: React.FC = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -36,7 +36,7 @@ const DayView: React.FC = () => {
             onClick={() => setShowPaymentForm(true)}
             className="btn btn-success flex items-center"
           >
-            <DollarSign className="h-4 w-4 mr-2" />
+            <IndianRupee className="h-4 w-4 mr-2" />
             New Payment
           </button>
         </div>

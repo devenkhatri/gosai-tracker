@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { ChevronRight, DollarSign, Calendar } from 'lucide-react';
+import { ChevronRight, IndianRupee, Calendar } from 'lucide-react';
 
 const Login: React.FC = () => {
   const { login } = useAuth();
@@ -11,7 +11,7 @@ const Login: React.FC = () => {
         <div className="p-8">
           <div className="flex justify-center mb-6">
             <div className="h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center">
-              <DollarSign className="h-8 w-8 text-blue-600" />
+              <IndianRupee className="h-8 w-8 text-blue-600" />
             </div>
           </div>
           
@@ -33,7 +33,7 @@ const Login: React.FC = () => {
             
             <div className="bg-gray-50 p-4 rounded-lg">
               <div className="flex items-center">
-                <DollarSign className="h-5 w-5 text-green-600 mr-3" />
+                <IndianRupee className="h-5 w-5 text-green-600 mr-3" />
                 <div>
                   <h3 className="font-medium text-gray-900">Track Finances</h3>
                   <p className="text-sm text-gray-600">Monitor orders and payments with color coding</p>
